@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Displaying resume in JSON format </title>
+    </head>
+    <body>
+    </body>
+    <script>
+        let myResume = {
+            name: "Bhanushri",
+            fatherName: "Pandi",
+            motherName: "Rajeswari",
+            emailId: "steffynajones@gmail.com",
+            phone: "9087661001",
+            degree: "B.E(ECE)",
+            location: {
+                street: "5th street",
+                area: "pari nagar",
+                city: "karaikudi",
+                pincode: "630001",
+            },
+            work : [
+                {
+                company: "Info Tech IT private limited",
+                position: "web designer",
+                startDate: "Aug,2018",
+                endDate: "Dec,2018",
+                summary: "I did course on web designing",
+                },
+                {
+                company: "Netaxis IT solution",
+                position: "web designer",
+                startDate: "Mar,2019",
+                endDate: "aug,2021",
+                summary: "I worked as a web designer for 3 years",  
+                }
+            ],
+            websites: {
+                wofox: "https://www.wofox.com/",
+                howtopronounce:"https://www.howtopronounce.com/",
+                jdify:"https://jdify.com/ (work in progress)"
+            },
+            education: [
+                {
+                course: "10th",
+                institution: "Alagappa matric. Higher Sec. School",
+                area: "Karaikudi",
+                year: "2012",
+                gpa: "89%",
+                },
+                {
+                course: "12th",
+                institution: "SRV matric. Higher Sec. School",
+                area: "Trichy",
+                year: "2014",
+                gpa: "78%",
+                },
+                {
+                course: "B.E",
+                institution: "PSNA College of Engineering and Technology",
+                area: "Dindigul",
+                year: "2014-2018",
+                gpa: "70%",
+                }
+            ],
+            skills:                 {
+                "name": "Software Programmer",
+                "level": "well at web designing",
+                "keywords": [HTML,CSS,SCSS,Javascript,Jquary]
+                },
+            languages: [
+                {
+                language: ["English","Tamil"],
+                fluency: "good"
+                }
+            ]
+        }
+    </script>
+</html>
