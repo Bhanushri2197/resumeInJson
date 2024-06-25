@@ -79,7 +79,23 @@
             for (var key in myResume) {
             if (myResume.hasOwnProperty(key)) {
                 var value = myResume[key];
-            console.log(key + " : " + value);
+                if(Array.isArray(value)){
+                    console.log(key + "=> ")
+                     for(i=0;i<value.length;i++){
+                        for (var key1 in value[i]) {
+                            console.log(key1 + " : " + value[i][key1]);
+                        }
+                     }
+                     console.log("    ")
+                }
+               else if(typeof value == "object"){
+                        console.log(key + " : " + JSON.stringify(value));
+                   
+                   
+                }
+                else{
+                    console.log(key + " : " + value);
+                }           
             }
         }
         }
