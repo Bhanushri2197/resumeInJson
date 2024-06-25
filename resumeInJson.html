@@ -80,11 +80,13 @@
             if (myResume.hasOwnProperty(key)) {
                 var value = myResume[key];
                 if(Array.isArray(value)){
+                    console.log("    ")
                     console.log(key + "=> ")
                      for(i=0;i<value.length;i++){
                         for (var key1 in value[i]) {
                             console.log(key1 + " : " + value[i][key1]);
                         }
+                        console.log("    ")
                      }
                      console.log("    ")
                 }
